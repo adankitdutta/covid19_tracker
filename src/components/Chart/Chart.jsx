@@ -39,7 +39,6 @@ const Chart=({data:{confirmed,active,recovered,deaths},state})=>{
         }}
         />):null
     )
-        console.log(confirmed);
         const barChart = (
             confirmed ? (
               <Bar
@@ -55,7 +54,7 @@ const Chart=({data:{confirmed,active,recovered,deaths},state})=>{
                 }}
                 options={{
                   legend: { display: false },
-                  title: { display: true, text: `Current state in ${state}` },
+                  title: { display: true, text: `Current condition in ${state}` },
                 }}
               />
             ) : null

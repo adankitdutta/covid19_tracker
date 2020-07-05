@@ -79,3 +79,17 @@ export const fetchStates= async()=>{
         console.log(error);
     }
 }
+
+
+export const fetchDistrict = async (state) =>{
+    if(state){        
+        try{
+            const {data}=await axios.get('https://api.covid19india.org/state_district_wise.json');
+           
+           return data[state].districtData;
+        }
+        catch(error){
+            console.log(error);
+        }       
+    }
+}
