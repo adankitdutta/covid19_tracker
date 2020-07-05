@@ -1,0 +1,13 @@
+.container{
+    display:flex;
+    width:70%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      margin: 2% 1%;
+    }
+
+  }
