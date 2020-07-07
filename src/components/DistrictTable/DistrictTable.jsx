@@ -154,6 +154,7 @@ const addDistricts=()=>{
 
   return (
     <div className={cx(classes.root,styles.container)}>
+    <div className={styles.container}>
       <Paper className={classes.paper}>
         <TableContainer>
           <Table
@@ -191,6 +192,7 @@ const addDistricts=()=>{
           </Table>
         </TableContainer>
       </Paper>
+      </div>
     </div>
   );
 }
